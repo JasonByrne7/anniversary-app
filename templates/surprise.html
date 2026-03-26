@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-card fade-up">
+    <p class="eyebrow">A Little Surprise</p>
+    <h1 class="section-title">Just for You 🎁</h1>
+    <p class="section-text">
+        Two special videos, saved here as a little reminder of how much you mean to me.
+    </p>
+
+    <div class="video-grid">
+        <div class="video-card">
+            <h3>Video One</h3>
+            <video controls>
+                <source src="{{ url_for('static', filename='videos/playme.mp4') }}" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-card">
+            <h3>Video Two</h3>
+            <video controls>
+                <source src="{{ url_for('static', filename='videos/lizard.mp4') }}" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+{% endblock %}

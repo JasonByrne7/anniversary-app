@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-card fade-up">
+    <p class="eyebrow">Memory Lane</p>
+    <h1 class="section-title">Our Favourite Moments 📸</h1>
+    <p class="section-text">
+        A small collection of the memories that mean the most to me
+        Every photo holds a moment I never want to forget my love x
+    </p>
+
+    <div class="slideshow-card">
+        <div class="slideshow">
+            <img class="slide active" src="{{ url_for('static', filename='images/img1.jpg') }}" alt="Memory 1">
+            <img class="slide" src="{{ url_for('static', filename='images/img2.jpg') }}" alt="Memory 2">
+            <img class="slide" src="{{ url_for('static', filename='images/img3.jpg') }}" alt="Memory 3">
+            <img class="slide" src="{{ url_for('static', filename='images/img4.jpg') }}" alt="Memory 4">
+            <img class="slide" src="{{ url_for('static', filename='images/img5.jpg') }}" alt="Memory 5">
+            <img class="slide" src="{{ url_for('static', filename='images/img6.jpg') }}" alt="Memory 6">
+            <img class="slide" src="{{ url_for('static', filename='images/img7.jpg') }}" alt="Memory 7">
+            <img class="slide" src="{{ url_for('static', filename='images/img8.jpg') }}" alt="Memory 8">
+            <img class="slide" src="{{ url_for('static', filename='images/img9.jpg') }}" alt="Memory 9">
+            <img class="slide" src="{{ url_for('static', filename='images/img10.jpg') }}" alt="Memory 10">
+            <img class="slide" src="{{ url_for('static', filename='images/img11.jpg') }}" alt="Memory 11">
+            <img class="slide" src="{{ url_for('static', filename='images/img12.jpeg') }}" alt="Memory 12">
+            <img class="slide" src="{{ url_for('static', filename='images/img13.jpg') }}" alt="Memory 13">
+            <img class="slide" src="{{ url_for('static', filename='images/img14.jpg') }}" alt="Memory 14">
+            <img class="slide" src="{{ url_for('static', filename='images/img15.jpg') }}" alt="Memory 15">
+            <img class="slide" src="{{ url_for('static', filename='images/img16.jpg') }}" alt="Memory 16">
+            <img class="slide" src="{{ url_for('static', filename='images/img17.jpg') }}" alt="Memory 17">
+            <img class="slide" src="{{ url_for('static', filename='images/img18.jpg') }}" alt="Memory 18">
+            <img class="slide" src="{{ url_for('static', filename='images/img19.jpg') }}" alt="Memory 19">
+          
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-card fade-up">
+    <p class="eyebrow">For You</p>
+    <h1 class="section-title">Click How You Feel baby 💌</h1>
+    <p class="section-text">
+        Whenever I’m not beside you baby I still want my words to be here for you
+        Pick how you’re feeling, and let me remind you what you mean to me beautiful xx😘
+    </p>
+
+    <div class="emotion-grid">
+        <button class="emotion-btn" onclick="showMessage('lonely')">When You Feel Lonely</button>
+        <button class="emotion-btn" onclick="showMessage('sad')">When You Feel Sad</button>
+        <button class="emotion-btn" onclick="showMessage('happy')">When You Feel Happy</button>
+        <button class="emotion-btn" onclick="showMessage('overthinking')">When You’re Overthinking</button>
+    </div>
+
+    <div class="message-card">
+        <p id="message" class="emotion-message">
+            Click a feeling above and your message will appear here ❤️
+        </p>
+    </div>
+</section>
+
+<script>
+function showMessage(emotion) {
+    const messages = {
+        lonely: "My love, even when I’m not right beside you, I’m still with you in every way that matters You are never alone baby, and you will always have my heart with you xx ❤️",
+        sad: "It’s okay to have hard days my beautiful girl Please be gentle with yourself and remember that you are loved more than words could ever fully say you are my angel and I am very lucky to have you by myside xx 💕",
+        happy: "Seeing you happy is one of my favourite things in this world Your smile makes everything brighter, and your joy means so much to me I'll sacrifice myself for you to happy, it's my job and I love doing it so much it's worth everything xx😘",
+        overthinking: "Take a deep breath for me baby You don’t need to carry everything all at once You are enough, you are loved, and things will be okay, never have to worry about me baby I am by yourside always and there be no one else only you I only care about you baby always and I am all yours I pinky that you are irreplaceable xx 💖"
+    };
+    document.getElementById('message').innerText = messages[emotion];
+}
+</script>
+{% endblock %}

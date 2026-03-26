@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero-card fade-up">
+    <p class="eyebrow">27 March 2026 • Our Second Anniversary</p>
+
+    <h1 class="hero-title">Happy Anniversary, My Love 💖</h1>
+
+    <p class="hero-text">
+        Two years of love, laughter, comfort, memories, and choosing each other again and again always
+        This little space was made for you baby for our story, our favourite memories, and for all the moments
+        when you need a reminder of just how deeply you are loved by me you are my everything, you deserve this and I love you so much Enjoy xx
+    </p>
+
+    <div class="hero-buttons">
+        <a class="primary-btn" href="/memory">View Our Memories</a>
+        <a class="secondary-btn" href="/emotions">Open Your Notes</a>
+    </div>
+</section>
+
+<section class="info-grid">
+    <div class="glass-card fade-up">
+        <h2>Our Story</h2>
+        <p>
+            A timeline of the moments that made us to who we are now baby — the little memories,
+            the beautiful milestones, and the reasons I’ll always choose you always you X
+        </p>
+    </div>
+
+    <div class="glass-card fade-up">
+        <h2>For Every Feeling</h2>
+        <p>
+            Whether you feel lonely, sad, happy, or are overthinking,
+            I wanted you to have a place to come back to and feel close to me always baby I am always yours never forget that x
+        </p>
+    </div>
+
+    <div class="glass-card fade-up">
+        <h2>A Little Surprise</h2>
+        <p>
+            A special page waiting for you with videos, memories,
+            and little pieces of my heart saved here just for you baby and you keep coming back if you need to my love xx😘
+        </p>
+    </div>
+</section>
+
+<!-- SEAL -->
+<img id="seal" src="{{ url_for('static', filename='images/seal.png') }}">
+<div id="seal-message"></div>
+<div id="seal-sleep">😴 zZz...</div>
+
+{% endblock %}
